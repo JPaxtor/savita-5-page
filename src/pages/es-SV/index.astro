@@ -1,0 +1,13 @@
+---
+import { changeLanguage } from "i18next";
+import { Hero } from "../../components";
+import Layout from "../../layouts/Layout.astro";
+
+changeLanguage("en-SV");
+---
+
+<Layout>
+	<main>
+		<Hero client:load />
+	</main>
+</Layout>
